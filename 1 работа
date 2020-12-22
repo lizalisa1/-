@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+class Tea{
+    public:
+        void message(){
+            cout<<a<<" "<<b<<"\n";
+        }
+        void izmen(int c, int d){
+            a=c;
+            b=d;
+        }
+        int sum(){
+            int s;
+            s=a+b;
+            return s;
+        }
+        int max(){
+            
+            if (a<b){
+                return b;
+            } 
+            else{
+                return a;
+            }
+        }
+    int a, b;
+        
+};
+
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    Tea lll;
+    lll.izmen(a,b);
+    lll.message();
+    lll.sum();
+    cout<<lll.sum()<<"\n";
+    lll.max();
+    cout<<lll.max()<<"\n";
+
+    return 0;
+}
